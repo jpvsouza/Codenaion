@@ -1,0 +1,9 @@
+C:\Users\andre\Codenation\csharp-0\Source\bin\Debug\netstandard2.1\Source.deps.json
+C:\Users\andre\Codenation\csharp-0\Source\bin\Debug\netstandard2.1\Source.dll
+C:\Users\andre\Codenation\csharp-0\Source\bin\Debug\netstandard2.1\Source.pdb
+C:\Users\andre\Codenation\csharp-0\Source\obj\Debug\netstandard2.1\Source.csprojAssemblyReference.cache
+C:\Users\andre\Codenation\csharp-0\Source\obj\Debug\netstandard2.1\Source.csproj.CoreCompileInputs.cache
+C:\Users\andre\Codenation\csharp-0\Source\obj\Debug\netstandard2.1\Source.AssemblyInfoInputs.cache
+C:\Users\andre\Codenation\csharp-0\Source\obj\Debug\netstandard2.1\Source.AssemblyInfo.cs
+C:\Users\andre\Codenation\csharp-0\Source\obj\Debug\netstandard2.1\Source.dll
+C:\Users\andre\Codenation\csharp-0\Source\obj\Debug\netstandard2.1\Source.pdb
