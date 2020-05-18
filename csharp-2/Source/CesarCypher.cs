@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 
 namespace Codenation.Challenge
 {
@@ -26,20 +27,24 @@ namespace Codenation.Challenge
                 }
                 else
                 {
-                    message.ToLower();
-                    foreach (char letra in message)
+                 
+                    foreach (char letra in message.ToLower())
                     {
-                        if(letra == 121)
+                        if(letra == 120)
                         {
                             cripto.Add('a');
                         }
-                        else if (letra == 122)
+                        else if (letra == 121)
                         {
                             cripto.Add('b');
                         }
-                        else if (letra > 99 && letra <123)
+                        else if (letra == 122)
+                            {
+                            cripto.Add('c');
+                        }
+                        else if (letra > 96 && letra <120)
                         {
-                            cripto.Add(Convert.ToChar(letra + 2));
+                            cripto.Add(Convert.ToChar(letra + 3));
                         }
                         else if (letra == 32 ||letra > 47 && letra < 58)
                         {
@@ -50,8 +55,15 @@ namespace Codenation.Challenge
                             throw new ArgumentOutOfRangeException();
                         }
                     }
+
+                    string retorno = string.Empty;
+                    foreach (var codigo in cripto)
+                    {
+                        retorno += codigo.ToString();
+                    }
+                    return retorno;
                 }
-                return cripto.ToString();
+                
             }
         }
 
@@ -72,20 +84,23 @@ namespace Codenation.Challenge
                 }
                 else
                 {
-                    cryptedMessage.ToLower();
-                    foreach (char letra in cryptedMessage)
+                    foreach (char letra in cryptedMessage.ToLower())
                     {
                         if (letra == 97)
                         {
-                            cripto.Add('y');
+                            cripto.Add('x');
                         }
                         else if (letra == 98)
                         {
+                            cripto.Add('y');
+                        }
+                        else if (letra == 99)
+                        {
                             cripto.Add('z');
                         }
-                        else if (letra > 98 && letra < 123)
+                        else if (letra > 99 && letra < 123)
                         {
-                            cripto.Add(Convert.ToChar(letra - 2));
+                            cripto.Add(Convert.ToChar(letra - 3));
                         }
                         else if (letra == 32 || letra > 47 && letra < 58)
                         {
@@ -97,7 +112,12 @@ namespace Codenation.Challenge
                         }
                     }
                 }
-                return cripto.ToString();
+                string retorno = string.Empty;
+                foreach (var codigo in cripto)
+                {
+                    retorno += codigo.ToString();
+                }
+                return retorno;
             }
         }
     }
